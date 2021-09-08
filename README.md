@@ -1,4 +1,4 @@
-<h1 style="text-align:center;color:green;"><b>API-Development-in-Python-Django-with-Swagger</b></h1>
+<h1 align="center"><b>API-Development-in-Python-Django-with-Swagger</b></h1>
 
 ![API-img](./doc/API.png)
 
@@ -152,7 +152,7 @@
 
 #
 
-<h3 style="text-align:center;color:green">END</h3>
+<h3 align="center">END</h3>
 
 #
 
