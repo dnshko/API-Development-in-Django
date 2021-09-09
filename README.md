@@ -72,7 +72,7 @@
 
 
 
-### _Add 2 Files in the app folder_ (api folder)
+### _Add 2 Files in the api folder_ (api folder)
 
     urls.py
     serializers.py
