@@ -21,7 +21,7 @@
     django-admin startproject server_config .
     python manage.py startapp api
 
-### _Add the following line in the settings.py file_
+### _Add the following line in the settings.py file_ (server_config folder)
 
     INSTALLED_APPS = [
         'corsheaders',
@@ -39,7 +39,7 @@
         )
     }
 
-### _Add the following line in the urls.py file_
+### _Add the following line in the urls.py file_ (server_config folder)
 
     from django import urls
     from django.contrib import admin
@@ -72,13 +72,13 @@
 
 
 
-### _Add 2 Files in the app folder_ (app folder)
+### _Add 2 Files in the app folder_ (api folder)
 
     urls.py
     serializers.py
 
 
-### _Add the following line in the models.py file_ (app folder)
+### _Add the following line in the models.py file_ (api folder)
 
     from django.db import models
 
@@ -87,7 +87,7 @@
         productname = models.CharField(max_length=100)
         description = models.CharField(max_length=100)
 
-### _Add the following line in the serializers.py file_ (app folder)
+### _Add the following line in the serializers.py file_ (api folder)
 
     from django.db.models import fields
     from rest_framework import serializers
@@ -99,7 +99,7 @@
             fields = '__all__'
 
 
-### _Add the following line in the views.py file_ (app folder)
+### _Add the following line in the views.py file_ (api folder)
 
     from django.shortcuts import render
     from .models import *
@@ -120,7 +120,7 @@
             else:
                 return sef.list(request)
 
-### _Add the following line in the urls.py file_ (app folder)
+### _Add the following line in the urls.py file_ (api folder)
 
     from django.urls import path
     from .views import *
